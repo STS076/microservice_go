@@ -28,26 +28,19 @@ jobs:
         working-directory: ./internal/pkg
         run: go build -v ./...
 
-      - name: identity_service build
-        working-directory: ./internal/services/identity_service
+
+      - name: delivery_service build
+        working-directory: ./internal/services/delivery_service
         run: go build -v ./...
 
-      - name: product_service build
-        working-directory: ./internal/services/product_service
+      - name: basket_service build
+        working-directory: ./internal/services/basket_service
         run: go build -v ./...
 
-      - name: inventory_service build
-        working-directory: ./internal/services/inventory_service
-        run: go build -v ./...
-
-      - name: product_service test
-        working-directory: ./internal/services/product_service
+      - name: delivery_service test
+        working-directory: ./internal/services/delivery_service
         run: go test -v ./...
 
-      - name: identity_service test
-        working-directory: ./internal/services/identity_service
-        run: go test -v ./...
-
-      - name: inventory_service test
-        working-directory: ./internal/services/inventory_service
+      - name: basket_service test
+        working-directory: ./internal/services/basket_service
         run: go test -v ./...

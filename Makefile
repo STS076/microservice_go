@@ -41,7 +41,7 @@ proto_identities_get_user_by_id_service:
 
 swagger_products:
 	@echo Starting swagger generating
-	swag init -g ./internal/services/product_service/cmd/main.go -o ./internal/services/product_service/docs
+	swag init -g ./internal/services/basket_service/cmd/main.go -o ./internal/services/product_service/docs
 
 swagger_identities:
 	@echo Starting swagger generating
@@ -49,4 +49,4 @@ swagger_identities:
 
 swagger_inventories:
 	@echo Starting swagger generating
-	swag init -g ./internal/services/inventory_service/cmd/main.go -o ./internal/services/inventory_service/docs
+	swag init -g ./internal/services/delivery_service/cmd/main.go -o ./internal/services/inventory_service/docs
