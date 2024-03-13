@@ -1,5 +1,5 @@
 {
-  "serviceName": "basket_service",
+  "serviceName": "identity_service",
   "deliveryType": "http",
   "context": {
     "timeout": 20
@@ -8,12 +8,12 @@
     "user": "guest",
     "password": "guest",
     "host": "localhost",
-    "port": 15672,
-    "exchangeName": "basket",
+    "port": 5672,
+    "exchangeName": "identity",
     "kind" : "topic"
   },
   "echo": {
-    "port": ":5000",
+    "port": ":5002",
     "development": true,
     "timeout": 30,
     "basePath": "/api/v1",
@@ -35,15 +35,15 @@
   },
   "jaeger": {
     "server": "http://localhost:14268",
-    "serviceName":"basket_service",
-    "tracerName": "basket_tracer"
+    "serviceName":"identity_service",
+    "tracerName": "identity_tracer"
   },
   "gormPostgres": {
     "host": "localhost",
-    "port": 5433,
+    "port": 5432,
     "user": "sophie",
     "password": "sophie",
-    "dbName": "basket_service",
+    "dbName": "identity_service",
     "sslMode": false
   }
 }

@@ -9,15 +9,20 @@ import (
 	"github.com/meysamhadeli/shop-golang-microservices/internal/pkg/logger"
 	"github.com/meysamhadeli/shop-golang-microservices/internal/pkg/otel"
 	"github.com/meysamhadeli/shop-golang-microservices/internal/pkg/rabbitmq"
-	"github.com/pkg/errors"
-	"github.com/spf13/viper"
 	"os"
 	"path/filepath"
 	"runtime"
 	"strings"
+
+	"github.com/pkg/errors"
+	"github.com/spf13/viper"
 )
 
 var configPath string
+
+func init() {
+	flag.StringVar(&configPath, "config", "", "products write microservice config path")
+}
 
 type Config struct {
 	ServiceName  string                        `mapstructure:"serviceName"`
@@ -29,8 +34,8 @@ type Config struct {
 	Jaeger       *otel.JaegerConfig            `mapstructure:"jaeger"`
 }
 
-func init() {
-	flag.StringVar(&configPath, "config", "", "baskets write microservice config path")
+type Context struct {
+	Timeout int `mapstructure:"timeout"`
 }
 
 func InitConfig() (*Config, *logger.LoggerConfig, *otel.JaegerConfig, *gormpgsql.GormPostgresConfig,

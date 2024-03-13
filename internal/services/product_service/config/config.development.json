@@ -8,8 +8,8 @@
     "user": "guest",
     "password": "guest",
     "host": "localhost",
-    "port": 15672,
-    "exchangeName": "basket",
+    "port": 5672,
+    "exchangeName": "product",
     "kind" : "topic"
   },
   "echo": {
@@ -36,13 +36,13 @@
   "jaeger": {
     "server": "http://localhost:14268",
     "serviceName":"basket_service",
-    "tracerName": "basket_tracer"
+    "tracerName": "product_tracer"
   },
   "gormPostgres": {
     "host": "localhost",
     "port": 5432,
-    "user": "postgres",
-    "password": "postgres",
+    "user": "sophie",
+    "password": "sophie",
     "dbName": "basket_service",
     "sslMode": false
   }

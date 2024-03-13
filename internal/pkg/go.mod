@@ -29,7 +29,7 @@ require (
 	golang.org/x/crypto v0.12.0
 	google.golang.org/grpc v1.57.0
 	gorm.io/driver/postgres v1.3.8
-	gorm.io/gorm v1.25.5
+	gorm.io/gorm v1.23.8
 )
 
 require (
@@ -59,7 +59,7 @@ require (
 	github.com/jackc/pgtype v1.12.0 // indirect
 	github.com/jackc/pgx/v4 v4.16.1 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
-	github.com/jinzhu/now v1.1.5 // indirect
+	github.com/jinzhu/now v1.1.4 // indirect
 	github.com/klauspost/compress v1.16.0 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/labstack/gommon v0.3.1 // indirect
@@ -67,7 +67,6 @@ require (
 	github.com/magiconair/properties v1.8.7 // indirect
 	github.com/mattn/go-colorable v0.1.12 // indirect
 	github.com/mattn/go-isatty v0.0.16 // indirect
-	github.com/mattn/go-sqlite3 v1.14.19 // indirect
 	github.com/moby/patternmatcher v0.5.0 // indirect
 	github.com/moby/sys/sequential v0.5.0 // indirect
 	github.com/moby/term v0.5.0 // indirect
@@ -105,6 +104,5 @@ require (
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20230526203410-71b5a4ffd15e // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	gorm.io/driver/sqlite v1.5.4 // indirect
 	mellium.im/sasl v0.3.0 // indirect
 )
