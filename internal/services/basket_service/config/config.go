@@ -30,7 +30,7 @@ type Config struct {
 }
 
 func init() {
-	flag.StringVar(&configPath, "config", "", "products write microservice config path")
+	flag.StringVar(&configPath, "config", "", "baskets write microservice config path")
 }
 
 func InitConfig() (*Config, *logger.LoggerConfig, *otel.JaegerConfig, *gormpgsql.GormPostgresConfig,

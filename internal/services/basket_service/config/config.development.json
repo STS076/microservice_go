@@ -1,5 +1,5 @@
 {
-  "serviceName": "product_service",
+  "serviceName": "basket_service",
   "deliveryType": "http",
   "context": {
     "timeout": 20
@@ -9,7 +9,7 @@
     "password": "guest",
     "host": "localhost",
     "port": 15672,
-    "exchangeName": "product",
+    "exchangeName": "basket",
     "kind" : "topic"
   },
   "echo": {
@@ -35,15 +35,15 @@
   },
   "jaeger": {
     "server": "http://localhost:14268",
-    "serviceName":"product_service",
-    "tracerName": "product_tracer"
+    "serviceName":"basket_service",
+    "tracerName": "basket_tracer"
   },
   "gormPostgres": {
     "host": "localhost",
     "port": 5433,
     "user": "sophie",
     "password": "sophie",
-    "dbName": "product_service",
+    "dbName": "basket_service",
     "sslMode": false
   }
 }

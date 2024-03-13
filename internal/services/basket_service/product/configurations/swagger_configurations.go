@@ -9,7 +9,7 @@ import (
 func ConfigSwagger(e *echo.Echo) {
 
 	docs.SwaggerInfo.Version = "1.0"
-	docs.SwaggerInfo.Title = "Products Service Api"
-	docs.SwaggerInfo.Description = "Products Service Api"
+	docs.SwaggerInfo.Title = "Basket Service Api"
+	docs.SwaggerInfo.Description = "Basket Service Api"
 	e.GET("/swagger/*", echoSwagger.WrapHandler)
 }
